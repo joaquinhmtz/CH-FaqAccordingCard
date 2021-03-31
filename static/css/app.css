@@ -40,11 +40,11 @@ body {
   display: flex;
   height: 450px;
 }
-.panel section {
+.panel .section {
   width: 50%;
   position: relative;
 }
-.panel section .image-woman {
+.panel .section .image-woman {
   display: flex;
   align-items: center;
   height: 100%;
@@ -97,6 +97,10 @@ body {
 .faq-question:hover {
   cursor: pointer;
   color: #f47c57;
+  outline: none;
+}
+.faq-question:focus {
+  outline: none;
 }
 
 .faq-question-color {
@@ -141,7 +145,7 @@ body {
     display: none;
   }
 
-  .panel section {
+  .panel .section {
     overflow: hidden;
   }
 
@@ -177,7 +181,7 @@ body {
     flex-direction: column;
     padding: 0px 10px;
   }
-  .panel section {
+  .panel .section {
     width: 100%;
   }
 
@@ -222,7 +226,7 @@ body {
     flex-direction: column;
     padding: 0px 10px;
   }
-  .panel section {
+  .panel .section {
     width: 100%;
   }
 
