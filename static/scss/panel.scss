@@ -73,6 +73,10 @@
   padding: 15px 0;
   position: relative;
   transition: transform 0.3s ease-out;
+  border: none;
+  background: transparent;
+  width: 100%;
+  text-align: initial;
 
   &:hover {
     cursor: pointer;
