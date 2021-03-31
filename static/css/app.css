@@ -1,0 +1,244 @@
+/* ----- COLORS ----- */
+/* --- Background-gradients --- */
+/* --- Common colors --- */
+/* --- Primary colors text --- */
+/* --- Neutral colors text --- */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+/* ----- COLORS ----- */
+/* --- Background-gradients --- */
+/* --- Common colors --- */
+/* --- Primary colors text --- */
+/* --- Neutral colors text --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  font-size: 12px;
+  background: linear-gradient(#af67e9, #6565e7);
+}
+
+/* ----- COLORS ----- */
+/* --- Background-gradients --- */
+/* --- Common colors --- */
+/* --- Primary colors text --- */
+/* --- Neutral colors text --- */
+.wrapper-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.panel {
+  background-color: #fff;
+  width: 60%;
+  border-radius: 30px;
+  display: flex;
+  height: 450px;
+}
+.panel section {
+  width: 50%;
+  position: relative;
+}
+.panel section .image-woman {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* --- SECTION IMAGE --- */
+.image-box {
+  z-index: 2;
+  position: absolute;
+}
+.image-box img {
+  position: absolute;
+  left: -5rem;
+  bottom: -21.5rem;
+  width: 10rem;
+}
+
+.image-woman img {
+  z-index: 1;
+  position: absolute;
+}
+
+/* --- SECTION FAQ --- */
+.section-faq {
+  padding: 6% 5%;
+}
+.section-faq h1 {
+  font-size: 2rem;
+  color: #4a4b5e;
+}
+.section-faq .faq {
+  margin-top: 15px;
+}
+.section-faq .faq .faq-item {
+  border-bottom: 1px solid #e7e7e9;
+  transition: transform 0.3s ease-out;
+}
+
+.faq-question {
+  font-size: 12px;
+  color: #4a4b5e;
+  padding: 15px 0;
+  position: relative;
+  transition: transform 0.3s ease-out;
+}
+.faq-question:hover {
+  cursor: pointer;
+  color: #f47c57;
+}
+
+.faq-question-color {
+  font-weight: bold;
+}
+
+.faq-question::before {
+  content: url("./../../images/icon-arrow-down.svg");
+  position: absolute;
+  right: 0;
+  transition: all 0.5s ease-out;
+}
+
+.faq-question-transition::before {
+  content: url("./../../images/icon-arrow-down.svg");
+  position: absolute;
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  font-size: 12px;
+  color: #787887;
+  padding: 10px 0;
+  display: none;
+  transition: all 0.5s ease-out;
+}
+
+.faq-answer-show {
+  display: block;
+  transition: transform 1s;
+}
+
+/* --- Medias Queries --- */
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 896px) {
+  .pimp-image-desktop {
+    display: block;
+  }
+
+  .pimp-image-mobile {
+    display: none;
+  }
+
+  .panel section {
+    overflow: hidden;
+  }
+
+  .image-background img {
+    width: 50rem;
+    position: absolute;
+    left: -28rem;
+    top: -15rem;
+  }
+
+  .image-woman img {
+    left: -4rem;
+    width: 105%;
+  }
+}
+/* Tablets ----------- */
+@media screen and (min-width: 500px) and (max-width: 894px) {
+  .pimp-image-desktop {
+    display: none;
+  }
+
+  .pimp-image-mobile {
+    display: block;
+  }
+
+  .wrapper-panel {
+    min-height: 140vh;
+  }
+
+  .panel {
+    width: 80%;
+    height: 600px;
+    flex-direction: column;
+    padding: 0px 10px;
+  }
+  .panel section {
+    width: 100%;
+  }
+
+  .section-faq {
+    margin-top: 10px;
+  }
+  .section-faq h1 {
+    text-align: center;
+  }
+
+  .image-background {
+    display: flex;
+    justify-content: center;
+  }
+  .image-background img {
+    width: 90%;
+  }
+
+  .image-woman img {
+    width: 90%;
+    top: -10.4rem;
+    left: 0;
+  }
+}
+/* Smathphones ----------- */
+@media screen and (min-width: 375px) and (max-width: 499px) {
+  .pimp-image-desktop {
+    display: none;
+  }
+
+  .pimp-image-mobile {
+    display: block;
+  }
+
+  .wrapper-panel {
+    min-height: 130vh;
+  }
+
+  .panel {
+    width: 80%;
+    height: 480px;
+    flex-direction: column;
+    padding: 0px 10px;
+  }
+  .panel section {
+    width: 100%;
+  }
+
+  .section-faq {
+    margin-top: 10px;
+  }
+  .section-faq h1 {
+    text-align: center;
+  }
+
+  .image-background {
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-woman img {
+    width: 90% !important;
+    top: -6.4rem;
+    left: 0;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */

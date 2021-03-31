@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./static/css/app.css">
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .attribution a {
+      color: #fff;
+    }
+  </style>
+
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+</head>
+<body>
+
+  <div class="wrapper-panel">
+    <div class="panel">
+      <div class="image-box">
+        <img class="pimp-image-desktop" src="./images/illustration-box-desktop.svg" alt="Illustration box">
+      </div>
+      <section class="section-image">
+        <div class="image-background">
+          <img class="pimp-image-desktop" src="./images/bg-pattern-desktop.svg" alt="Pattern desktop">
+          <img class="pimp-image-mobile" src="./images/bg-pattern-mobile.svg" alt="Pattern mobile">
+        </div>
+        <div class="image-woman">
+          <img class="pimp-image-desktop" src="./images/illustration-woman-online-desktop.svg" alt="Illustration woman">
+          <img class="pimp-image-mobile" src="./images/illustration-woman-online-mobile.svg" alt="Illustration woman">
+        </div>
+      </section>
+      <section class="section-faq">
+        <h1>FAQ</h1>
+        <div id="faqId" class="faq">
+          <div id="faq1" class="faq-item">
+            <div id="faq-question1" class="faq-question" onclick="pimpAnswer('faq-question1', 'faq-answer1')">
+              How many team members can I invite?
+            </div>
+            <div id="faq-answer1" class="faq-answer">
+              <span>You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</span>
+            </div>
+          </div>
+          <div id="faq2" class="faq-item">
+            <div id="faq-question2" class="faq-question" onclick="pimpAnswer('faq-question2', 'faq-answer2')">
+              What is the maximun file upload size?
+            </div>
+            <div id="faq-answer2" class="faq-answer">
+              <span>No more than 2GB. All files in your account must fit your allotted storage space.</span>
+            </div>
+          </div>
+          <div id="faq3" class="faq-item">
+            <div id="faq-question3" class="faq-question" onclick="pimpAnswer('faq-question3', 'faq-answer3')">
+              How do I reset my password?
+            </div>
+            <div id="faq-answer3" class="faq-answer">
+              <span>Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</span>
+            </div>
+          </div>
+          <div id="faq4" class="faq-item">
+            <div id="faq-question4" class="faq-question" onclick="pimpAnswer('faq-question4', 'faq-answer4')">
+              Can I cancel my subscription?
+            </div>
+            <div id="faq-answer4" class="faq-answer">
+              <span>Yes! Send us a message and we’ll process your request no questions asked.</span>
+            </div>
+          </div>
+          <div id="faq5" class="faq-item">
+            <div id="faq-question5" class="faq-question" onclick="pimpAnswer('faq-question5', 'faq-answer5')">
+              Do you provide additional support?
+            </div>
+            <div id="faq-answer5" class="faq-answer">
+              <span>Chat and email support is available 24/7. Phone lines are open during normal business hours.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/joaquinhmtz/CH-FaqAccordingCard">Joaquín Hernández</a>.
+  </div>
+
+  <script type="text/javascript" src="./static/js/animate.js"></script>
+</body>
+</html>
